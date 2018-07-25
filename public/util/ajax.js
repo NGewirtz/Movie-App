@@ -23,7 +23,7 @@ export function handleAddToFavorites(movie) {
     request.onreadystatechange = () => {
       if (request.readyState === 4) {
         if (request.status === 200) {
-          resolve(console.log("resolved"));
+          resolve();
         } else {
           reject(request.status);
         }

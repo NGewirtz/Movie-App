@@ -22,7 +22,7 @@ class Favorites extends React.Component {
     movies = movies.map(movie => {
       return JSON.parse(Object.keys(movie));
     });
-    this.setState({movies: [...new Set(movies)]});
+    this.setState({movies});
   }
 
   render() {
