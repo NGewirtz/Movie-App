@@ -4,7 +4,7 @@ import MovieListContainer from './MovieListContainer'
 import { makeAjaxRequest } from '../util/ajax';
 
 class Home extends React.Component {
-  
+
   constructor() {
     super();
     this.state = {
@@ -16,9 +16,9 @@ class Home extends React.Component {
   }
 
   async handleSubmit() {
-    const key = "2320b4c3";
+    const key = process.env.apikey;
     const searchTerm = this.state.searchTerm;
-    const url = `http://www.omdbapi.com/?apikey=${key}&s=${searchTerm}`;
+    const url = `https://www.omdbapi.com/?apikey=${key}&s=${searchTerm}`;
     const movies = await makeAjaxRequest(url);
     this.setState({movies})
   }
