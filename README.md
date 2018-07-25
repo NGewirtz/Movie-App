@@ -1,7 +1,7 @@
 # Movie-App
 
 ## Live site
-[Movie App](https://movie-app-.herokuapp.com/#/)
+[Movie App](https://movie-app-.herokuapp.com/?#/)
 
 ## Built with React.js
 
