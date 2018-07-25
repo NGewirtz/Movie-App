@@ -7294,8 +7294,6 @@ var MovieListContainer = function (_React$Component) {
   _createClass(MovieListContainer, [{
     key: 'render',
     value: function render() {
-      var _this2 = this;
-
       if (!this.props.movies) {
         return _react2.default.createElement(
           'ul',
@@ -7309,8 +7307,7 @@ var MovieListContainer = function (_React$Component) {
       }
       var movieSearchResults = this.props.movies.map(function (movie) {
         return _react2.default.createElement(_MovieListItem2.default, { movie: movie,
-          key: movie.imdbID,
-          toggleExpanded: _this2.toggleExpanded
+          key: movie.imdbID
         });
       });
       return _react2.default.createElement(

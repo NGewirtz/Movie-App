@@ -14,7 +14,6 @@ class MovieListContainer extends React.Component {
     const movieSearchResults = this.props.movies.map( movie => {
       return <MovieListItem movie={movie}
         key={movie.imdbID}
-        toggleExpanded={this.toggleExpanded}
       />;
     });
     return (
