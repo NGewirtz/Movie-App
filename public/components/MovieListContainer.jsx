@@ -10,17 +10,18 @@ class MovieListContainer extends React.Component {
           <li>No Results</li>
         </ul>
       );
-    }
-    const movieSearchResults = this.props.movies.map( movie => {
-      return <MovieListItem movie={movie}
-        key={movie.imdbID}
-      />;
-    });
-    return (
-      <ul>
-        { movieSearchResults }
-      </ul>
-    );
+    }else {
+      const movieSearchResults = this.props.movies.map( movie => {
+        return <MovieListItem movie={movie}
+          key={movie.imdbID}
+          />;
+      });
+      return (
+        <ul>
+          { movieSearchResults }
+        </ul>
+      );
+    }    
   }
 }
 

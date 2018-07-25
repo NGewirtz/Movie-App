@@ -7304,17 +7304,18 @@ var MovieListContainer = function (_React$Component) {
             'No Results'
           )
         );
-      }
-      var movieSearchResults = this.props.movies.map(function (movie) {
-        return _react2.default.createElement(_MovieListItem2.default, { movie: movie,
-          key: movie.imdbID
+      } else {
+        var movieSearchResults = this.props.movies.map(function (movie) {
+          return _react2.default.createElement(_MovieListItem2.default, { movie: movie,
+            key: movie.imdbID
+          });
         });
-      });
-      return _react2.default.createElement(
-        'ul',
-        null,
-        movieSearchResults
-      );
+        return _react2.default.createElement(
+          'ul',
+          null,
+          movieSearchResults
+        );
+      }
     }
   }]);
 
