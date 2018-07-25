@@ -12087,7 +12087,7 @@ exports.default = Header;
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(process) {
+
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -12137,7 +12137,7 @@ var Home = function (_React$Component) {
   _createClass(Home, [{
     key: 'handleSubmit',
     value: async function handleSubmit() {
-      var key = process.env.apikey;
+      var key = NODE_ENV.apikey;
       var searchTerm = this.state.searchTerm;
       var url = 'https://www.omdbapi.com/?apikey=' + key + '&s=' + searchTerm;
       var movies = await (0, _ajax.makeAjaxRequest)(url);
@@ -12173,7 +12173,6 @@ var Home = function (_React$Component) {
 }(_react2.default.Component);
 
 exports.default = Home;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
 /* 109 */
