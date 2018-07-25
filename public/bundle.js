@@ -12137,7 +12137,7 @@ var Home = function (_React$Component) {
   _createClass(Home, [{
     key: 'handleSubmit',
     value: async function handleSubmit() {
-      var key = NODE_ENV.apikey;
+      var key = "2320b4c3";
       var searchTerm = this.state.searchTerm;
       var url = 'https://www.omdbapi.com/?apikey=' + key + '&s=' + searchTerm;
       var movies = await (0, _ajax.makeAjaxRequest)(url);

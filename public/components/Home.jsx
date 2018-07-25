@@ -16,7 +16,7 @@ class Home extends React.Component {
   }
 
   async handleSubmit() {
-    const key = NODE_ENV.apikey;
+    const key = "2320b4c3";
     const searchTerm = this.state.searchTerm;
     const url = `https://www.omdbapi.com/?apikey=${key}&s=${searchTerm}`;
     const movies = await makeAjaxRequest(url);
